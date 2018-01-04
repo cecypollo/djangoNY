@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+        <html>
+          <head>
+            <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+            <title>Inicio</title>
+          </head>
+
+          <style>
+              body{
+                background-image: url('{% static "images/AI1.jpg"%}');
+              }
+          </style>
+
+          <body>
+            <div style="text-align: right; ">
+              <form action="http://127.0.0.1:8000/signin/nuevo">
+                <input value=" SIGN IN " style="height: 40px; font-family: Avenir;"
+type="submit"></form>
+           <form action="http://127.0.0.1:8000/joinus/nuevo">
+                <input value=" JOIN US" style=" height: 40px; font-family: Avenir; " type="submit"></form>
+          </div>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <a style="color: white; font-family: Avenir;" href="http://127.0.0.1:8000/learnmore/">LEARN MORE</a>
+            <br><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <a style="color: white; font-family: Avenir;" href="http://127.0.0.1:8000/demo/">DEMO</a>
+            <br><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <a style="color: white; font-family: Avenir;" href="http://127.0.0.1:8000/aboutus">ABOUT US</a>
+</body></html>

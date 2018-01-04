@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Surname</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% if clients %}
+    {% for client in clients %}
+     <tr>
+        <td>{{client.firstname}}</td>
+        <td>{{client.surname}}</td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <h1>No clients</h1>
+    {% endif %}
+    </tbody>
+
+</table>
+{% endblock %}
